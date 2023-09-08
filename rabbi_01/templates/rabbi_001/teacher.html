@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/tea.css' %}">
+    <!--  <link rel="stylesheet" href="{% static 'css/style2.css' %}"> -->
+    <title>Teacher</title>
+</head>
+
+<body>
+    <h1>{{thr}}</h1>
+    {% if thr %}
+    <table>
+
+        <tr>
+            <th>ID</th>
+            <th>t_id</th>
+            <th>t_name</th>
+            <th>t_email</th>
+        </tr>
+        {% for th in thr %}
+        <tr>
+            <td>{{th.id}}</td>
+            <td>{{th.t_id}}</td>
+            <td>{{th.t_name}}</td>
+            <td>{{th.t_email}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+    {% else %}
+    <h2>Empty DB</h2>
+    {% endif %}
+
+</body>
+
+</html>

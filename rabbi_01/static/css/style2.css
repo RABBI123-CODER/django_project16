@@ -1,0 +1,14 @@
+body {
+    background-color: greenyellow;
+}
+
+h1 {
+    color: seagreen;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+th,
+td {
+    border: 2px solid blue;
+}

@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style_fir.css' %}">
+
+    <title>rabbi_001</title>
+</head>
+<body>
+    <h1>this is rabbi_001 app template inside folder rabbi_001 in rabbi_002 html file and it is my project..</h1>
+    <br />
+    {% for tn in names reversed %}
+    {{forloop.counter}} {{tn}}<br />
+    {% endfor %}
+    <img src="{% static 'image/IMG_20220110_031816.jpg' %}" />
+    <div>
+        <p class="style1 style2">
+        My country is Bangladesh. Bangladesh is a Southeast Asian country. It is small country but huge population. It
+        gains independence twice. Once from Britain in 1947 and again from Pakistan in 1971. Dhaka is the capital of
+        this country. More than twenty crore people live in our country. Most of them are Muslims. Others are Hindus,
+        Buddhists and Christians. Most of the people occupation of our country are farmers. Remaining people are
+        doctors, engineers, teachers, businessmen, jobbers etc.
+    </p>
+    </div>
+
+
+</body>

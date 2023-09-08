@@ -1,0 +1,14 @@
+body {
+    background-color: red;
+}
+
+h1 {
+    color: green;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+img {
+    height: 300px;
+    width: 200px;
+}

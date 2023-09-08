@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css\style1.css' %}">
+    <title>rabbi_001</title>
+</head>
+<body>
+    <h1>this is rabbi_001 app template inside folder rabbi_001 in rabbi_001 html file and it is my project</h1><br />
+
+    <h2>we are offering {{c}} course and total class {{tl}} and total seat {{st}} and duration {{d|upper}}. </h2><br />
+
+    <h1>we are offering {{c|upper}} course and total class {{tl}} and total seat {{st}} and duration {{d|lower}}. </h1><br />
+
+    <h1>we are offering {{c|capfirst}} course and total class {{tl}} and total seat {{st}} and duration {{d|lower}}. </h1><br />
+
+    <h1>the machine learning length  {{c|length}} </h1>
+    <h1>about tag  </h1>
+
+    {% if st == 40 %}
+    <h3>this is if part one</h3>
+    {% elif st == 30 %}
+    <h3>this is elif part one</h3>
+    {% else %}
+    <h3>this is else part one</h3>
+    {% endif %}
+    <img src="{% static 'image/IMG_20220110_031816.jpg' %}" />
+
+
+</body>
+</html>
